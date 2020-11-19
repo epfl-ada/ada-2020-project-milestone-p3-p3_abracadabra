@@ -14,8 +14,14 @@
 
 ## Methods
 
-> Proposed timeline
-> Organization within the team
+xxx
+
+## Proposed timeline
+
+xxx
+
+## Organization within the team
+
 > A list of internal milestones up until project milestone P4. Add here a sketch of your planning for the next project milestone.
 
 ## Questions for TAs (optional)
