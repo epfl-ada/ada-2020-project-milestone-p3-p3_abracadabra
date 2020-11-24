@@ -48,8 +48,6 @@ We were thinking about using at least the following fields:
 
 ## Methods
 
-No particular method in mind, apart from a lot of exploration and visualization about the data.
-
 > When it comes to racial biases, what is the profile of a "good cop"?
   When it comes to racial biases, what is the profile of a "bad cop"?
   
