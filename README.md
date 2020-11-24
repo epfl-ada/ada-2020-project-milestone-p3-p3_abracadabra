@@ -48,8 +48,10 @@ We were thinking about using at least the following fields:
 
 ## Methods
 
+
 > When it comes to racial biases, what is the profile of a "good cop"?
-  When it comes to racial biases, what is the profile of a "bad cop"?
+> When it comes to racial biases, what is the profile of a "bad cop"?
+  
   
 ### Racial bias coefficient
   
@@ -67,7 +69,9 @@ In this part, we want to give recommendations to agencies to make them enable to
 TO DO: Define if we use linear regression or logistic (if log coeff need to be between 0 and 1)
 TO DO: Define if we build a global model or a model for each state (maybe focus on 5/6 states)
 
+
 > In which states can we find the "best" and "worst" cops, when it comes to racial biases?
+
 
 ### Statistical exploration of the racial bias coefficient
 
@@ -75,7 +79,9 @@ In this part, we will take a statistical look on our racial bias coefficient to 
 
 TO DO: Define stat to use (maybe hard without a first look on the coefficient)
 
+
 > Are we able to predict if an officier will be a "bad" / "good" cop using his profil?
+
 
 ### Complex modelization of the racial bias coefficient of an officier
 
