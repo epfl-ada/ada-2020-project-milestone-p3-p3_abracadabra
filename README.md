@@ -50,12 +50,13 @@ We were thinking about using at least the following fields:
 
 
 > When it comes to racial biases, what is the profile of a "good cop"?
+
 > When it comes to racial biases, what is the profile of a "bad cop"?
   
   
 ### Racial bias coefficient
   
-To capture the level of racial bias of each officier, we will create a racial bias coefficient which measure this level. Higher is the coefficient, higher is the level of racial bias of an officier. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway. So, for each officier, we will take a look on the two ratios $frac{# of black drivers stopped before sunset / 1 million of black persons}{# of white drivers stopped before sunset / 1 million of white persons}$ and $frac{# of black drivers stopped after sunset / 1 million of black persons}{# of white drivers stopped after sunset / 1 million of white persons}$. Thus, if a ratio is higher than the other, it highlights the fact that an officier is subject to a racial bias. Our coefficient will reflect this difference of ratio.
+To capture the level of racial bias of each officier, we will create a racial bias coefficient which measure this level. Higher is the coefficient, higher is the level of racial bias of an officier. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway. So, for each officier, we will take a look on the two ratios $\frac{# of black drivers stopped before sunset / 1 million of black persons}{# of white drivers stopped before sunset / 1 million of white persons}$ and $\frac{# of black drivers stopped after sunset / 1 million of black persons}{# of white drivers stopped after sunset / 1 million of white persons}$. Thus, if a ratio is higher than the other, it highlights the fact that an officier is subject to a racial bias. Our coefficient will reflect this difference of ratio.
 
 TO DO: See if we also include hispannic drivers
 TO DO: See if we do unique coefficient or if we do one coefficient bias against black drivers and another for white drivers and see if we can improve this coefficient.
