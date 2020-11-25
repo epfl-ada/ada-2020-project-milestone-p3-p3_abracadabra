@@ -47,19 +47,13 @@ We were thinking about using at least the following fields:
 * unit: Unit to which officer has been assigned.
 
 ## Methods
-
-
-> When it comes to racial biases, what is the profile of a "good cop"?
-
-> When it comes to racial biases, what is the profile of a "bad cop"?
-  
   
 ### Racial bias coefficient
-  
+
 To capture the level of racial bias of each officier, we will create a racial bias coefficient which measure this level. Higher is the coefficient, higher is the level of racial bias of an officier. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway. So, for each officier, we will take a look on the two ratios $\frac{# of black drivers stopped before sunset / 1 million of black persons}{# of white drivers stopped before sunset / 1 million of white persons}$ and $\frac{# of black drivers stopped after sunset / 1 million of black persons}{# of white drivers stopped after sunset / 1 million of white persons}$. Thus, if a ratio is higher than the other, it highlights the fact that an officier is subject to a racial bias. Our coefficient will reflect this difference of ratio.
 
-TO DO: See if we also include hispannic drivers
-TO DO: See if we do unique coefficient or if we do one coefficient bias against black drivers and another for white drivers and see if we can improve this coefficient.
+* TODO: See if we also include hispannic drivers
+* TODO: See if we do unique coefficient or if we do one coefficient bias against black drivers and another for white drivers and see if we can improve this coefficient.
 
 ### Simple modelization of the racial bias coefficient of an officier
 
@@ -67,9 +61,8 @@ To understant the profil of a "bad" / "good" cop, we will fit a simple model wit
 
 In this part, we want to give recommendations to agencies to make them enable to focus on some profils, with for example prevention day for these cops.
 
-TO DO: Define if we use linear regression or logistic (if log coeff need to be between 0 and 1)
-TO DO: Define if we build a global model or a model for each state (maybe focus on 5/6 states)
-
+* TODO: Define if we use linear regression or logistic (if log coeff need to be between 0 and 1)
+* TODO: Define if we build a global model or a model for each state (maybe focus on 5/6 states)
 
 > In which states can we find the "best" and "worst" cops, when it comes to racial biases?
 
@@ -78,17 +71,15 @@ TO DO: Define if we build a global model or a model for each state (maybe focus 
 
 In this part, we will take a statistical look on our racial bias coefficient to understand the distribution of "bad" / "good" cop accross different states.
 
-TO DO: Define stat to use (maybe hard without a first look on the coefficient)
-
+TODO: Define stat to use (maybe hard without a first look on the coefficient)
 
 > Are we able to predict if an officier will be a "bad" / "good" cop using his profil?
-
 
 ### Complex modelization of the racial bias coefficient of an officier
 
 In this part, we will use a more complex model using an extended features space from the original characteristic of officier to label the racial bias coefficient. The goal is to obtain good predictions to be able to predict the level of racial bias of an officier.
 
-TO DO: Define model (linear regression, logistic, NN ...)
+TODO: Define model (linear regression, logistic, NN ...)
 
 ## Proposed timeline
 
