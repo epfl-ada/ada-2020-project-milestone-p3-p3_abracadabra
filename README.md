@@ -50,10 +50,41 @@ We were thinking about using at least the following fields:
   
 ### Racial bias coefficient
 
-To capture the level of racial bias of each officer, we will create a racial bias coefficient which measures this level. Higher is the coefficient, higher is the level of racial bias of an officer. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway. So, for each officer, we will take a look on the two ratios $\frac{# of black drivers stopped before sunset / 1 million of black persons}{# of white drivers stopped before sunset / 1 million of white persons}$ and $\frac{# of black drivers stopped after sunset / 1 million of black persons}{# of white drivers stopped after sunset / 1 million of white persons}$. Thus, if a ratio is higher than the other, it highlights the fact that an officer is subject to a racial bias. Our coefficient will reflect this difference in ratio.
+To capture the level of racial bias of each officier, we will create a racial bias coefficient $\delta$ which measures this level. Higher is the coefficient, higher is the level of racial bias of an officer. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway.
 
-* TODO: See if we also include Hispanic drivers
-* TODO: See if we do unique coefficient or if we do one coefficient bias against black drivers and another for white drivers and see if we can improve this coefficient.
+Let $\alpha_r,_t$ be the number of race r drivers stopped at time t
+
+Where r can be:
+* b: black
+* h: hispanic
+* w: white
+
+And t can be:
+* b: before sunset
+* a: after sunset
+
+We define $\beta_r,_t$ the proportion of race r drivers stopped at time t:
+
+$\beta_r,_t = \frac{\alpha_r,_t}{\alpha_b,_t + \alpha_h,_t + \alpha_w,_t}$
+
+Let's condider $\sigma_r$ the ratio of the proportion of race r drivers stopped before sunset over the proportion of the race r drivers stopped after sunset:
+
+$\sigma_r = \frac{\beta_r,_b}{\beta_r,_a}$
+
+Now, let's define $\lambda_r$ the absolute value of the previous ratio over all races, centered:
+
+$\lambda_r = |\frac{\sigma_r}{\sigma_b + \sigma_h + \sigma_w} - \frac{1}{N_r}|$
+
+where $N_r$ is the number of different races in the studies (here we have $N_r = 3$
+
+Finally, we can define $\delta$ our racial bias coefficient:
+
+$\delta = 1 - \frac{N_r}{exp(\lambda_b) + exp(\lambda_h) + exp(\lambda_w)}$
+
+We have designed this coefficient on three principal ideas:
+* If there are some little differences between $\sigma_b$, $\sigma_h$ and $\sigma_w$, we want to not penalize the racial bias coefficient since these differences can be due of a noise (we are looking stop for each officier so we do not have the same amount of data than for each state).
+* If there are big differences, we want to penalize a lot.
+* If an officier harshly focus a race, we want to penalize a lot.
 
 ### Simple modelization of the racial bias coefficient of an officer
 
