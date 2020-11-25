@@ -73,7 +73,7 @@ $\sigma_r = \frac{\beta_r,_b}{\beta_r,_a}$
 
 Now, let's define $\lambda_r$ the absolute value of the previous ratio over all races, centered:
 
-$\lambda_r = |\frac{\sigma_r}{\sigma_b + \sigma_h + \sigma_w} - \frac{1}{N_r}|$
+\begin{equation} $\lambda_r = |\frac{\sigma_r}{\sigma_b + \sigma_h + \sigma_w} - \frac{1}{N_r}|$ \end{equation}
 
 where $N_r$ is the number of different races in the studies (here we have $N_r = 3$
 
