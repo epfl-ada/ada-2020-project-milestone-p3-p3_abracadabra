@@ -52,6 +52,7 @@ We were thinking about using at least the following fields:
 * unit: Unit to which officer has been assigned.
 
 In order to measure the behaviour of an officer we could use the following fields:
+
 	##### Search and arrest:
 * search_basis 	This provides the reason for the search where provided and is categorized into k9, plain view, consent, probable cause, and other...
 * reason_for_arrest 	A freeform text field indicating the reason for arrest where provided. 	
