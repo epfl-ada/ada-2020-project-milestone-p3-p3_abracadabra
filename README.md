@@ -94,7 +94,6 @@ To understand the profile of a "bad" / "good" cop, we will fit a simple model wi
 
 In this part, we want to give recommendations to agencies to enable them to focus on some profiles, with for example prevention day for these cops.
 
-* TODO: Define if we use linear regression or logistic (if log coefficient need to be between 0 and 1)
 * TODO: Define if we build a global model or a model for each state (maybe focus on 5/6 states)
 
 > In which states can we find the "best" and "worst" cops when it comes to racial biases?
@@ -104,15 +103,11 @@ In this part, we want to give recommendations to agencies to enable them to focu
 
 In this part, we will take a statistical look at our racial bias coefficient to understand the distribution of "bad" / "good" cop across different states.
 
-TODO: Define stat to use (maybe hard without a first look on the coefficient)
-
 > Are we able to predict if an officer will be a "bad" / "good" cop using his profile?
 
 ### Complex modelization of the racial bias coefficient of an officer
 
 In this part, we will use a more complex model using an extended features space from the original characteristic of an officer to label the racial bias coefficient. The goal is to obtain good predictions to be able to predict the level of the racial bias of an officer.
-
-TODO: Define model (linear regression, logistic, NN ...)
 
 ## Proposed timeline
 
