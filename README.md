@@ -14,7 +14,7 @@ The goal would be to unearth patterns that could help us understand what are the
 more likely to be biased, and to help the authorities do additional training to avoid the aforementioned biases against minorities.
 
 By proposing a systematic, data-driven approach, we believe this extension to the original paper would help address
-the root cause of racial issues, by allowing the concerned authorities to understand what are officers likely to make
+the root cause of racial issues, by allowing the concerned authorities to understand which officers are likely to make
 an error of judgement in the line of duty.
 
 ## Research Questions
@@ -24,7 +24,10 @@ an error of judgement in the line of duty.
 * When it comes to racial biases, what is the profile of a "good cop"?
 * When it comes to racial biases, what is the profile of a "bad cop"?
 * In which states can we find the "best" and "worst" cops when it comes to racial biases?
-* Are we able to predict if an officer will be a "bad" / "good" cop using his profile?
+* Are we able to predict if an officer will be a "bad" / "good" cop using his profile? 
+* Can we find officers with a behaviour that deviate from the normal: officers who provoke an excessive amount of stop and arrests; officers which use an excessive amount of force.
+* Are we able to draw a link between officers who are excessively violents and those that have a racial bias?
+* Are officers with high responsability less violents than others? Do those officers have a past record indicating that?
 
 ## Proposed dataset
 
@@ -48,8 +51,34 @@ We were thinking about using at least the following fields:
 * department_name: Name of department or subdivision to which officer has been assigned.
 * unit: Unit to which officer has been assigned.
 
+In order to measure the behaviour of an officer we could use the following fields:
+	##### Search and arrest:
+* search_basis 	This provides the reason for the search where provided and is categorized into k9, plain view, consent, probable cause, and other...
+* reason_for_arrest 	A freeform text field indicating the reason for arrest where provided. 	
+* reason_for_frisk 	A freeform text field indicating the reason for frisk where provided. 	
+* reason_for_search 	A freeform text field indicating the reason for search where provided. 	
+* reason_for_stop 	A freeform text field indicating the reason for the stop where provided.
+	##### use of force:
+* use_of_force_description 	A freeform text field describing the use of force. 	"handcuffed"
+* use_of_force_reason 	A freeform text field describing the reason for the use of force.
+	##### Fields which indicate if a search and stop was conclusive
+* contraband_found 	Indicates whether contraband was found. When search_conducted is NA, this is coerced to NA under the assumption that contraband_found shouldn't be discovered when no search occurred and likely represents a data error. 	
+* contraband_drugs 	Indicates whether drugs were found. This is only defined when contraband_found is true. 	
+* contraband_weapons 	Indicates whether weapons were found. This is only defined when contraband_found is true. 	
+*  contraband_other 	Indicates whether contraband other than drugs and weapons were found. This is only defined when contraband_found is true.
+
 ## Methods
-  
+
+### Creating statistics: Determining if an officer deviates from the normal
+In one of our research questions we wondered if we could find officers with an excessively violent behaviour.
+We could try to find officers which provoke a number of stops arrests, that deviate from the normal. This could indicate policemen who are looking for action. We could then check if officers which use force more often than other police officers are linked to those who stop people excessively or to officers that have a racial bias. 
+#### Finding excessive violence
+We could try to enumerate the number of times an officer used force. We could then compare this number to the median use of force by officers in his department, unit or in the US. From that we could qualify if an officer's behaviour deviates from the normal. We could do some refinement and even create statistics telling whether or not an officer is excessively violent towards a certain race. 
+#### Finding excessive arrests.
+We could do something analogous to the analysis of the use of force.
+#### Qualifying whether or not arrest are unjustified:
+Per officer we could determine the ratio of (arrest and search which are conclusive) / (arrest and searches). We could then compare this value to the national, department, unit medians. By conclusive we mean that either one of the fields in "Fields which indicate if a search and stop was conclusive" is indicating something positive indicating the search led to some finding.
+
 ### Racial bias coefficient
 
 To capture the level of racial bias of each officier, we will create a racial bias coefficient <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/delta.PNG"> which measures this level. Higher is the coefficient, higher is the level of racial bias of an officer. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway.
