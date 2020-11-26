@@ -52,6 +52,7 @@ We were thinking about using at least the following fields:
 
 To capture the level of racial bias of each officier, we will create a racial bias coefficient <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/delta.PNG"> which measures this level. Higher is the coefficient, higher is the level of racial bias of an officer. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway.
 
+![screenshoot](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/alpha.PNG)
 Let <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/alpha.PNG"> be the number of race r drivers stopped at time t
 
 Where r can be:
