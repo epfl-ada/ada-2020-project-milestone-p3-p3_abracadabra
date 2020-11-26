@@ -1,5 +1,7 @@
 # "Good Cops"/"Bad Cops" Profiling
 
+NB: This ReadMe includes pictures of the repository https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img
+
 ## Abstract
 
 > A 150-word description of the project idea, goals, datasets used. What's the motivation behind your project? How do you propose to extend the analysis from the paper? What story would you like to tell, and why?
@@ -75,7 +77,7 @@ Now, let's define <img src="https://github.com/epfl-ada/ada-2020-project-milesto
 
 <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/formulae_lambda.PNG">
 
-where <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/N.png"> is the number of different races in the studies (here we have <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/N_3.PNG">)
+where <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/N.PNG"> is the number of different races in the studies (here we have <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/N_3.PNG">)
 
 Finally, we can define <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/delta.PNG"> our racial bias coefficient:
 
