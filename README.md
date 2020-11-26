@@ -65,24 +65,24 @@ And t can be:
 
 We define <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/beta.png"> the proportion of race r drivers stopped at time t:
 
-<img src=https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae beta.png">
+<img src=https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae_beta.png">
 
 Let's condider <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/sigma.png"> the ratio of the proportion of race r drivers stopped before sunset over the proportion of the race r drivers stopped after sunset:
 
-<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae sigma.png">
+<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae_sigma.png">
 
 Now, let's define <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/lambda.png"> the absolute value of the previous ratio over all races, centered:
 
-<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae lambda.png">
+<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae_lambda.png">
 
-where <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/N.png"> is the number of different races in the studies (here we have <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/N 3.png">)
+where <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/N.png"> is the number of different races in the studies (here we have <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/N_3.png">)
 
 Finally, we can define <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/delta.png"> our racial bias coefficient:
 
-<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae delta.png">
+<img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/formulae_delta.png">
 
 We have designed this coefficient on three principal ideas:
-* If there are some little differences between <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/sigma b h w.png">, we want to not penalize the racial bias coefficient since these differences can be due of a noise (we are looking stop for each officier so we do not have the same amount of data than for each state).
+* If there are some little differences between <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/sigma_b_h_w.png">, we want to not penalize the racial bias coefficient since these differences can be due of a noise (we are looking stop for each officier so we do not have the same amount of data than for each state).
 * If there are big differences, we want to penalize a lot.
 * If an officier harshly focus a race, we want to penalize a lot.
 
