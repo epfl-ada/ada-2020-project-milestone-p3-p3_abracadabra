@@ -53,16 +53,16 @@ We were thinking about using at least the following fields:
 
 In order to measure the behaviour of an officer we could use the following fields:
 
-	##### Search and arrest:
+##### Search and arrest:
 * search_basis 	This provides the reason for the search where provided and is categorized into k9, plain view, consent, probable cause, and other...
 * reason_for_arrest 	A freeform text field indicating the reason for arrest where provided. 	
 * reason_for_frisk 	A freeform text field indicating the reason for frisk where provided. 	
 * reason_for_search 	A freeform text field indicating the reason for search where provided. 	
 * reason_for_stop 	A freeform text field indicating the reason for the stop where provided.
-	##### use of force:
+##### use of force:
 * use_of_force_description 	A freeform text field describing the use of force. 	"handcuffed"
 * use_of_force_reason 	A freeform text field describing the reason for the use of force.
-	##### Fields which indicate if a search and stop was conclusive
+##### Fields which indicate if a search and stop was conclusive
 * contraband_found 	Indicates whether contraband was found. When search_conducted is NA, this is coerced to NA under the assumption that contraband_found shouldn't be discovered when no search occurred and likely represents a data error. 	
 * contraband_drugs 	Indicates whether drugs were found. This is only defined when contraband_found is true. 	
 * contraband_weapons 	Indicates whether weapons were found. This is only defined when contraband_found is true. 	
