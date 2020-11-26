@@ -1,6 +1,6 @@
 # "Good Cops"/"Bad Cops" Profiling
 
-NB: This ReadMe includes pictures of the repository https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img
+NB: This ReadMe includes pictures of the repository https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img
 
 ## Abstract
 
