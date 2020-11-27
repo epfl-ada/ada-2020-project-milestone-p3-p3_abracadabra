@@ -80,6 +80,10 @@ We could do something analogous to the analysis of the use of force.
 #### Qualifying whether or not arrest are unjustified:
 Per officer we could determine the ratio of (arrest and search which are conclusive) / (arrest and searches). We could then compare this value to the national, department, unit medians. By conclusive we mean that either one of the fields in "Fields which indicate if a search and stop was conclusive" is indicating something positive indicating the search led to some finding.
 
+> When it comes to racial biases, what is the profile of a "good cop"?
+
+> When it comes to racial biases, what is the profile of a "bad cop"?
+
 ### Racial bias coefficient
 
 To capture the level of racial bias of each officier, we will create a racial bias coefficient <img src="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/blob/master/img/delta.PNG"> which measures this level. Higher is the coefficient, higher is the level of racial bias of an officer. To compute this coefficient, we will use the "veil of darkness" method developed by Grogger and Ridgeway.
@@ -124,7 +128,6 @@ To understand the profile of a "bad" / "good" cop, we will fit a simple model wi
 
 In this part, we want to give recommendations to agencies to enable them to focus on some profiles, with for example prevention day for these cops.
 
-* TODO: Define if we build a global model or a model for each state (maybe focus on 5/6 states)
 
 > In which states can we find the "best" and "worst" cops when it comes to racial biases?
 
