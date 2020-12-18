@@ -183,7 +183,6 @@ RBC: racial bias coefficient
 * Questions 1 and 5 in the website + notebook
 
 ### Simon
-
+* Question 6
 * Part of Question 2
 * Question 3
-* 
