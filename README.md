@@ -178,6 +178,7 @@ RBC: racial bias coefficient
 
 ### David
 
+* Thought of the data story flow + potential questions (not all of them though, it was a collective effort)
 * Setting up the website + basic text in there
 * Questions 1 and 5 in the website + notebook
 
