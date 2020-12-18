@@ -165,3 +165,9 @@ All of the other tasks could then be parallelized.
 
 * Does this sound realistic given the timeframe we have?
 * The opposite of the question above: does this sound too simple given the timeframe we have? Should we do more?
+
+## Contribution
+
+RBC: racial bias coefficient
+
+Kevin: Part compute RBC and model officer RBC: import and preprocess data + analyze (figure and pearson) + writte the part on the website
